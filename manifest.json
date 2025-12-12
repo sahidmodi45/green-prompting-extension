@@ -1,1 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Green Prompting Extension",
+  "description": "Floating Green Prompting panel inside ChatGPT with sustainability stats and tips.",
+  "version": "1.0",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
 
